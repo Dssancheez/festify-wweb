@@ -3,6 +3,8 @@
 import { HashRouter, Routes, Route } from "react-router-dom";
 import Home from "@/screens/Home";
 import PageNotFound from "@/screens/PageNotFound";
+import Artists from "@/screens/Artists";
+import ArtistDetail from "@/screens/ArtistDetail";
 
 
 export default function App() {
@@ -11,6 +13,8 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="*" element={<PageNotFound />} />
+          <Route path="/Artists" element={ <Artists />}/>
+          <Route path= "/artists/:id" element={<ArtistDetail />}/>
       </Routes>
     </HashRouter>
   );

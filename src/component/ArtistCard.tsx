@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 type Props = {
   id: number;
-  name: string;             
+  name: string;            
   genre?: string;
 };
 
